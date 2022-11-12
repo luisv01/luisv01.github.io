@@ -1,0 +1,121 @@
+<h1 style="text-align: center">The Ball Jar</h1>
+<div
+  id="oval"
+  style="
+    z-index: 1;
+    position: relative;
+    /* left: auto;
+    top: auto; */
+    width: 900px;
+    height: 700px;
+    border-radius: 30%;
+    border: 2px solid #000;
+    background-color: rgb(234, 234, 134);
+    margin: auto;
+  "
+>
+  <div
+    id="ball2"
+    style="
+      z-index: 4;
+      position: relative;
+      left: 400px;
+      top: 300px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: blue;
+    "
+  ></div>
+  <div
+    id="ball"
+    style="
+      z-index: 5;
+      position: relative;
+      left: 400px;
+      top: 300px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: green;
+    "
+  ></div>
+  <div
+    id="ball3"
+    style="
+      z-index: 5;
+      position: relative;
+      left: 400px;
+      top: 300px;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background: red;
+    "
+  ></div>
+  <div
+    id="ball4"
+    style="
+      z-index: 5;
+      position: relative;
+      left: 400px;
+      top: 300px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: pink;
+    "
+  ></div>
+</div>
+
+<script>
+  //Set global variable that would contain the position, velocity and the html element "ball"
+  var ball = document.getElementById('ball');
+  var ball2 = document.getElementById('ball2');
+  var ball3 = document.getElementById('ball3');
+  var ball4 = document.getElementById('ball4');
+  //   var reverse = false;
+
+  // generate a random number
+  function randNumber(n) {
+    r = Math.floor(Math.random() * n);
+    return r;
+  }
+
+  //write a function that can change the position of the html element "ball"
+  function moveBall() {
+    // if (reverse === false) {
+    positionX = randNumber(600);
+    positionY = randNumber(400);
+    positionX2 = randNumber(600);
+    positionY2 = randNumber(450);
+    positionX3 = randNumber(600);
+    positionY3 = randNumber(450);
+    positionX4 = randNumber(600);
+    positionY4 = randNumber(400);
+    ball.style.left = positionX + 'px';
+    ball.style.top = positionY + 'px';
+    ball.style['background'] = `rgb(${randNumber(256)},${randNumber(
+      256
+    )},${randNumber(256)})`;
+    ball2.style.left = positionX2 + 'px';
+    ball2.style.top = positionY2 + 'px';
+    ball2.style['background'] = `rgb(${randNumber(256)},${randNumber(
+      256
+    )},${randNumber(256)})`;
+    ball3.style.left = positionX3 + 'px';
+    ball3.style.top = positionY3 + 'px';
+    ball3.style['background'] = `rgb(${randNumber(256)},${randNumber(
+      256
+    )},${randNumber(256)})`;
+    ball4.style.left = positionX3 + 'px';
+    ball4.style.top = positionY3 + 'px';
+    ball4.style['background'] = `rgb(${randNumber(256)},${randNumber(
+      256
+    )},${randNumber(256)})`;
+    // }
+  }
+
+  // This call the moveBall function every 100ms
+  setInterval(moveBall, 630);
+</script>
