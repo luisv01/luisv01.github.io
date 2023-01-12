@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>LV Profile</title>
+    
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/cover/"
+    />
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bg-image {
+        width: 100%;
+        height: 600px;
+        background-image: url('./media/boston.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="./cover.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark bg-image">
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div class="container navbar"></div>
+      </header>
+
+      <main class="px-3">
+        <div class="jumbotron text-center">
+          <div class="container">
+            <h1 class="display-5">Boston Salary Exercise</h1>
+            <p class="lead">
+              The goal of this exercise is to pick out the number of people
+              working for the City of Boston who earn over $100,000 and the
+              highest and lowest 5 earners and dynamically list them out in the
+              web page using JavaScript. The data used is a large data set in
+              JSON format that was converted to JavaScript. The data was was
+              downloaded from:
+              https://pollysnips.s3.amazonaws.com/bostonEmployeeSalaries.json
+            </p>
+          </div>
+        </div>
+        <!-- Main Section -->
+        <div class="container">
+          <h2>List of people with the 5 highest/lowest salaries.</h2>
+          <button
+            id="btn"
+            class="btn btn-lg btn-secondary fw-bold border-white bg-white"
+          >
+            Highest Salaries
+          </button>
+          <button
+            id="btn2"
+            class="btn btn-lg btn-secondary fw-bold border-white bg-white"
+          >
+            Lowest Salaries
+          </button>
+        </div>
+        <!-- Table -->
+        <div class="container text-white">
+          <table class="table text-center">
+            <thead id="tableHead" class="text-white"></thead>
+            <tbody class="text-white" id="earnerList"></tbody>
+          </table>
+          <div class="container text-center">
+            <div id="earnerCount"></div>
+          </div>
+        </div>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+          crossorigin="anonymous"
+        ></script>
+        <script src="./scripts/boston.js"></script>
+      </main>
+
+      <!-- <p>
+        <a
+          class="btn btn-primary"
+          data-bs-toggle="collapse"
+          href="#collapseExample"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Link with href
+        </a>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Button with data-bs-target
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is
+          hidden by default but revealed when the user activates the relevant
+          trigger.
+        </div>
+      </div> -->
+
+      <footer class="mt-auto text-white-70">
+        <p>&copy; 2022 - Site by Luis Villa.</p>
+      </footer>
+    </div>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/mainBoston.js"></script>
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
