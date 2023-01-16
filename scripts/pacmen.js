@@ -23,7 +23,7 @@ function makePac() {
   let newimg = document.createElement('img');
   newimg.style.position = 'absolute';
   newimg.src = './PacMenExercise/PacMan1.png';
-  newimg.classList.add('pacmen')
+  newimg.classList.add('pacmen');
 
   newimg.width = 100;
   newimg.style.left = position.x;
@@ -56,8 +56,7 @@ function update() {
 
 function checkCollisions(item) {
   if (
-    item.position.x + item.velocity.x + item.newimg.width >
-      window.innerWidth ||
+    item.position.x + item.velocity.x + item.newimg.width > window.innerWidth ||
     item.position.x + item.velocity.x < 0
   ) {
     item.velocity.x = -item.velocity.x;
@@ -81,5 +80,5 @@ function makeOne() {
 
 function reset() {
   const clearGame = document.querySelectorAll('.pacmen');
-  clearGame.forEach((e) => e.remove())
+  clearGame.forEach((e) => e.remove());
 }
