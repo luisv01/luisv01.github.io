@@ -14,61 +14,10 @@
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <style>
-      /* .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, 0.1);
-        border: solid rgba(0, 0, 0, 0.15);
-        border-width: 1px 0;
-        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -0.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      } */
       .bg-image {
         width: 100%;
         height: 600px;
-        background-image: url('./media/BeachCover.png');
+        /* background-image: url('./media/BeachCover.png'); */
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-blend-mode: overlay;
@@ -76,40 +25,39 @@
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet" />
+    <link href="./styles/cover.css" rel="stylesheet" />
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark bg-image">
     <!-- <script src="./navbar.js"></script> -->
     <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
-        <div class="container navbar">
-          <!-- <h3 class="float-md-start mb-0">LV</h3> -->
-          <!-- <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a
-              class="nav-link fw-bold py-1 px-0 active"
-              aria-current="page"
-              href="index.html"
-              >Home</a
-            >
-            <a
-              class="nav-link fw-bold py-1 px-0"
-              href="./BostonCityExercise/boston.html"
-              >Walk Boston Exercise</a
-            >
-            <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-            <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-            <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-          </nav> -->
-        </div>
+        <div class="container navbar"></div>
       </header>
 
       <main class="px-3">
         <h1 class="display-1">Luis Villa</h1>
         <h3 class="display-4">Web Developer</h3>
         <p class="display-6">
-          Welcome to my personal web page. Here I will showcase some projects I
-          have recently worked on the Coding Bootcamp at MIT xPRO.
+          In this personal protfolio I showcase my latest work and assignmnets
+          of the MIT xPRO Coding Bootcamp. I also show some of my work in my
+          home recording studio which recording music is one of my hobbies. I
+          also like spending time with my family at the beach.
         </p>
+        <!-- Main Section -->
+        <div class="container text-center ratio ratio-16x9">
+          <iframe
+            src="https://www.youtube.com/embed/qgInM6FH8Lk?rel=0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div class="container ratio ratio-16x9">
+          <img
+            src="./media/BeachCover.png"
+            class="img-fluid"
+            alt="beach image"
+          />
+        </div>
       </main>
 
       <footer class="mt-auto text-white-70">

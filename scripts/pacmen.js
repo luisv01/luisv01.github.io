@@ -1,7 +1,7 @@
 var pos = 0;
 const pacArray = [
-  ['../media/PacMan1.png', '../media/PacMan2.png'],
-  ['../media/PacMan3.png', '../media/PacMan4.png'],
+  ['./PacMenExercise/PacMan1.png', './PacMenExercise/PacMan2.png'],
+  ['./PacMenExercise/PacMan3.png', './PacMenExercise/PacMan4.png'],
 ];
 var direction = 0;
 var focus = 0;
@@ -22,7 +22,8 @@ function makePac() {
   let game = document.getElementById('game');
   let newimg = document.createElement('img');
   newimg.style.position = 'absolute';
-  newimg.src = '../media/PacMan1.png';
+  newimg.src = './PacMenExercise/PacMan1.png';
+  newimg.classList.add('pacmen')
 
   newimg.width = 100;
   newimg.style.left = position.x;
@@ -76,4 +77,9 @@ function checkCollisions(item) {
 
 function makeOne() {
   pacMen.push(makePac()); // add a new PacMan
+}
+
+function reset() {
+  const clearGame = document.querySelectorAll('.pacmen');
+  clearGame.forEach((e) => e.remove())
 }
