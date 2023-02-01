@@ -1,4 +1,9 @@
-# Boston City Data Exercise
-The purpose of this exercise if to pull a large date set form the Internet with salaries of people working in the city of Boston. The downloaded data is on JSON format, so needs to be converted to JavaScript to then render it as HTML on a browser. Finally the we need to find the 5 top earners on the city of Boston and find the number of people that earn more than $100k and display these findings on the browser as HTML. See files in 
+# Project Portfolio
 
-###This project was improved by using Bootstrap and displaying the data on an HTML table. 
+## Description of the project:
+
+The purpose of this website is to showcase a number of project done during the Certificate in Coding: Full Stack Development with MERN at MIT xPRO. The projects can be seen under the projects tab on the navigation bar.
+
+## Roadmap of future improvements:
+
+As the course progresses I wil be adding more projects using technoligies like React, Express, Mongo DB and others.

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+    rel="canonical"
+    href="https://getbootstrap.com/docs/5.2/examples/cover/"
+  />
+
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./styles/cover.css" rel="stylesheet" />
+    <link href="./styles/bustracker.css" rel="stylesheet" />
+    <title>Real Time Bus Tracker</title>
+  </head>
+  <body class="h-100 text-center text-white bg-dark bg-image">
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div class="container navbar"></div>
+      </header>
+      <main class="px-3">
+        <div class="">
+          <div id="map" class="container"></div>
+          <div class="map-overlay top">
+              <select class="btn-primary form-select form-select-lg mb-3" name="routeNumber" id="routes">
+                <option selected>Select a Route</option>
+                <option value="1">Route 1 - Harvard Sq.</option>
+                <option value="4">Route 4 - North Station</option>
+                <option value="10">Route 10 - Copley Sq.</option>
+                <option value="16">Route 16 - Forest Hills</option>
+                <option value="18">Route 18 - Ashmont Station</option>
+                <option value="77">Route 77 - Arlington Heights</option>
+                <option value="117">Route 117 - Wonderland Station</option>
+              </select>
+              <br>
+              <button class="btn btn-primary btn-lg" onclick="run()">
+                Track Buses
+              </button>
+          </div>
+        </div>
+      </main>
+
+    </div>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/bustracker.js"></script>
+    <!-- <script src="./mapanimation.js"></script> -->
+  </body>
+</html>
