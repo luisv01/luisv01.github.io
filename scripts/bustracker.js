@@ -41,7 +41,7 @@ let map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/streets-v11',
   center: [-71.104081, 42.365554],
-  zoom: 13,
+  zoom: 11,
 });
 
 //function to create random color for bus marker
@@ -81,9 +81,21 @@ function busMarkers(buses) {
 
   buses.forEach((bus) => {
     let color = getColor(bus.route);
-    busMarker = new mapboxgl.Marker({ color: color })
+    let popupText =
+      'Bus ID: ' +
+      bus.busId +
+      ' Bus Route: ' +
+      bus.route +
+      ' Seat Capacity: ' +
+      bus.occupancy_status;
+    // create a popup
+    const popup = new mapboxgl.Popup().setText(popupText);
+    const busMarker = new mapboxgl.Marker({ color: color })
       .setLngLat(bus.longLat)
+      .setPopup(popup)
       .addTo(map);
+
+    // busMarker.togglePopup();
     markers.push(busMarker);
   });
 }
