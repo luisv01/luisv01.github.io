@@ -11,11 +11,11 @@
       rel="stylesheet"
     />
     <link
-    rel="canonical"
-    href="https://getbootstrap.com/docs/5.2/examples/cover/"
-  />
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/cover/"
+    />
 
-  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./styles/cover.css" rel="stylesheet" />
     <link href="./styles/bustracker.css" rel="stylesheet" />
     <title>Real Time Bus Tracker</title>
@@ -29,24 +29,31 @@
         <div class="">
           <div id="map" class="container"></div>
           <div class="map-overlay top">
-              <select class="btn-primary form-select form-select-lg mb-3" name="routeNumber" id="routes">
-                <option selected>Select a Route</option>
-                <option value="1">Route 1 - Harvard Sq.</option>
-                <option value="4">Route 4 - North Station</option>
-                <option value="10">Route 10 - Copley Sq.</option>
-                <option value="16">Route 16 - Forest Hills</option>
-                <option value="18">Route 18 - Ashmont Station</option>
-                <option value="77">Route 77 - Arlington Heights</option>
-                <option value="117">Route 117 - Wonderland Station</option>
-              </select>
-              <br>
-              <button class="btn btn-primary btn-lg" onclick="run()">
-                Track Buses
-              </button>
+            <select
+              class="btn-primary form-select form-select-lg mb-3"
+              name="routeNumber"
+              id="routes"
+            >
+              <option selected>Select a Route</option>
+              <option value="1">Route 1 - Harvard Sq.</option>
+              <option value="4">Route 4 - North Station</option>
+              <option value="10">Route 10 - Copley Sq.</option>
+              <option value="16">Route 16 - Forest Hills</option>
+              <option value="18">Route 18 - Ashmont Station</option>
+              <option value="77">Route 77 - Arlington Heights</option>
+              <option value="117">Route 117 - Wonderland Station</option>
+            </select>
+            <br />
+            <button class="btn btn-primary btn-lg" onclick="run()">
+              Track Buses
+            </button>
           </div>
         </div>
+        <div class="container display-6">
+          Select a route from the dropdown menu. Click on "Track Buses". The bus
+          markers will update every 15 seconds with their locations.
+        </div>
       </main>
-
     </div>
     <script src="./scripts/navbar.js"></script>
     <script src="./scripts/bustracker.js"></script>

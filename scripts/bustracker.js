@@ -12,6 +12,12 @@ async function run() {
     });
   });
 
+  if (busLocations.length === 0) {
+    alert(
+      'There are no buses on this route at this time! \n Try a different route!'
+    );
+  }
+
   await busMarkers(busLocations);
   console.log(busLocations);
 
@@ -26,6 +32,7 @@ async function getBusLocations() {
     alert(`Please select a route from the dropdown menu!!\n
     Then click on "Track Buses"`);
   }
+
   const url = `https://api-v3.mbta.com/vehicles?filter[route]=${route}&include=trip`;
   const response = await fetch(url);
   const json = await response.json();

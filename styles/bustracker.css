@@ -1,17 +1,17 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
-  #map {
-    position: absolute;
-    top: 75px;
-    bottom: 30px;
-    width: 100%;
-  }
-  
-  .map-overlay {
-    position: absolute;
-    /* left: 0; */
-    padding: 10px;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 175px;
+  bottom: 30px;
+  width: 100%;
+}
+
+.map-overlay {
+  top: 171px;
+  position: absolute;
+  /* left: 0; */
+  padding: 10px;
+}

@@ -1,10 +1,9 @@
 # Project Portfolio
 ## Description of the project:
-The purpose of this website is to showcase a number of project done during the Certificate in Coding: Full Stack Development with MERN
+The purpose of this website is to showcase a number of projects done during the Certificate in Coding: Full Stack Development with MERN at MIT xPRO
 
 ## Roadmap of future improvements:
-Add different routes and give the user the ability to select from a list of routes.
-I would also like to add routes for other cities that have a public API sharing this type of data.
+As the course moves forward and I amm exposed to more technologies on the MERN stack, I will add more projects to this portfolio.
 
 ## License information
 MIT License

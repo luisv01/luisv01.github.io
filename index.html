@@ -22,6 +22,14 @@
         background-repeat: no-repeat;
         background-blend-mode: overlay;
       }
+
+      .text-underline-hover {
+        text-decoration: none;
+      }
+
+      .text-underline-hover:hover {
+        text-decoration: underline;
+      }
     </style>
 
     <!-- Custom styles for this template -->
@@ -37,28 +45,52 @@
       <main class="px-3">
         <h1 class="display-1">Luis Villa</h1>
         <h3 class="display-4">Web Developer</h3>
+        <!-- <h3 class="display-5">Bio</h3> -->
         <p class="display-6">
-          In this personal protfolio I showcase my latest work and assignmnets
-          of the MIT xPRO Coding Bootcamp. I also show some of my work in my
-          home recording studio which recording music is one of my hobbies. I
-          also like spending time with my family at the beach.
+          In this project portfolio I showcase my latest work and assignmnets at
+          the MIT xPRO Coding Bootcamp. Check my
+          <a
+            href="https://github.com/luisv01?tab=repositories"
+            target="_blank"
+            class="link-light text-underline-hover"
+            >GitHub public repositories</a
+          >
+          and my
+          <a
+            href="https://www.linkedin.com/in/luis-villa001/"
+            target="_blank"
+            class="link-light text-underline-hover"
+            >LinkedIn profile</a
+          >. In my spare time I like to spend time with my family at the beach
+          and play and record music in my home studio. Enjoy!
         </p>
         <!-- Main Section -->
-        <!-- src="https://www.youtube.com/embed/qgInM6FH8Lk?rel=0" -->
-        <div class="container text-center ratio ratio-16x9">
-          <iframe
-            src=""
-            allowfullscreen
-          >
-          </iframe>
-        </div>
         <div class="container ratio ratio-16x9">
           <img
             src="./media/BeachCover.png"
-            class="img-fluid"
+            class="img-thumbnail rounded mx-auto d-block"
             alt="beach image"
           />
         </div>
+        <div class="container text-center ratio ratio-16x9">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/3hveDlLgjOQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <!-- <iframe src="https://youtu.be/3hveDlLgjOQ" allowfullscreen> </iframe> -->
+        </div>
+        <!-- <div class="container ratio ratio-16x9">
+          <img
+            src="./media/BeachCover.png"
+            class="img-thumbnail rounded mx-auto d-block"
+            alt="beach image"
+          />
+        </div> -->
       </main>
 
       <footer class="mt-auto text-white-70">
