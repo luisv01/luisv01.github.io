@@ -3,7 +3,7 @@
 The purpose of this website is to showcase a number of projects done during the Certificate in Coding: Full Stack Development with MERN at MIT xPRO
 
 ## Roadmap of future improvements:
-As the course moves forward and I amm exposed to more technologies on the MERN stack, I will add more projects to this portfolio.
+As the course moves forward and I am exposed to more technologies on the MERN stack, I will add more projects to this portfolio.
 
 ## License information
 MIT License
