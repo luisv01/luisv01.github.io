@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Home</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.2/examples/cover/"
+    />
+
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bg-image {
+        width: 100%;
+        height: 600px;
+        /* background-image: url('./media/BeachCover.png'); */
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+      }
+
+      .text-underline-hover {
+        text-decoration: none;
+      }
+
+      .text-underline-hover:hover {
+        text-decoration: underline;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="./styles/cover.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark bg-image">
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+      <!-- <header> -->
+        <div class="container navbar"></div>
+      </header>
+      <h1 class="display-1">Luis Villa</h1>
+      <h3 class="display-4">Resume</h3>
+      <iframe src="./media/LuisVilla_Resume.pdf" width="100%" height="100%"> </iframe>
+
+      <footer class="mt-auto text-white-70">
+        <p>&copy; 2022 - Site by Luis Villa.</p>
+      </footer>
+    </div>
+    <script src="./scripts/navbar.js"></script>
+  </body>
+</html>
